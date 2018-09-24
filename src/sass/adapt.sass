@@ -1,7 +1,216 @@
++r(1200)
+	.lots
+		.lot
+			&__main
+				flex-direction: column
+				&-info
+					padding-right: 0
+					&:after
+						display: none
+
+			&__stats
+				display: flex;
+				align-items: center;
+				padding-left: 0;
+				&-other
+					display: flex;
+					margin-left: 20px;
+	.main
+		&__info
+			.info
+				&__items
+					flex-wrap: wrap;
+					justify-content: space-around;
+				&__item
+					margin-bottom: 20px	
+
+	.filter-nav__content1
+		flex-direction: column
+		.filter-nav__content-part
+			margin-bottom: 15px
+
 +r(1024)
+	.lots
+		.lot
+			&__number
+				margin-left: 25px
+			&__main-info
+				min-width: auto
+			&__footer
+				flex-direction: column
+				&>.flex
+					margin-top: 20px
+	.main-nav 
+		.in
+			flex-wrap: wrap
+			justify-content: center
+		&__item
+			min-width: 100px;
+			max-width: 100px;
+			&:after
+				display: none
+
+	.footer
+		.in
+			.footer__flex
+				flex-wrap: wrap
+				padding: 50px 10px 30px;
+				&>div
+					margin-bottom: 20px
+					padding: 0 5px
+		&__contacts
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			&-item
+				margin-right: 30px
 	
+	.second-header .in .menu
+		flex-wrap: wrap
+		justify-content: center
+		&__item
+			margin: 0 5px 10px
+	
+	.second-header
+		.search
+			&__filter
+				flex-direction: column;
+				align-items: flex-start;
+				.filter-nav
+					top: 69px
+			&__main
+				margin: 20px 0 20px
+
+	
+
++r(880)
+	.header__mob
+		.responsive-nav
+			display: block
+	.header__flex
+		display: none
+	.header__logo-mob
+		display: block
+	.header__account .account__reg
+		margin-right: 15px
+	.second-header .search__filter .filter-nav__content
+		padding: 20px;
+	.filter-nav__content2,.filter-nav__content3
+		.mainstyle
+			margin-bottom: 10px
+	.filter-nav__content4 
+		.wrapper-short
+			max-width: 105px
+		.filter-nav__checkbox
+			&>div
+				flex-direction: column
+				margin-bottom: 0!important
+			&-item
+				margin-right: 0
+				margin-bottom: 15px
+	.filter-nav__content5
+		.filter-nav__flex
+			flex-direction: column
+			.btn
+				margin-top: 15px
+	.second-header .search__filter .filter-nav__menu
+		flex: 1
+		padding: 0 10px
+	.second-header .search__filter .filter-nav__checkbox
+		min-width: auto
+	.second-header
+		margin-top: 124px
+
+
 +r(768)
+	.second-header .search
+		margin-top: 20px
+	.lots 
+		.lot
+			&__stats
+				flex-direction: column;
+				align-items: flex-start;
+				margin-top: 20px;
+				&-other
+					margin-left: 0;
+					margin-top: 20px;
+				&-item
+					margin-bottom: 10px
+			&__bidding
+				font-size: 20px
+			&__main
+				padding: 15px
+			&__header
+				flex-direction: column;
+				align-items: flex-start;
+			&__check
+				margin-left: 0
+				margin-top: 10px
+			&__info
+				flex-direction: column
+				margin-top: 20px
+			&__text
+				padding-left: 0
+			&__name
+				flex-direction: column;
+				align-items: flex-start;
+				margin-top: 20px
+			&__icons
+				margin: 15px 0 15px 0
+			&__number
+				margin-left: 0
+			&__footer
+				padding: 20px 15px;
+				&>.flex
+					flex-direction: column
+			&__more-btn
+				margin-top: 20px
++r(675)
+	.footer 
+		&__flex
+			flex-direction: column
+		&__pay a
+			margin-top: 15px;
+		&__bot
+			.in
+				height: auto
+				padding: 15px 10px
+			.flex
+				flex-direction: column
+				align-items: flex-start
+		&__contacts
+			flex-wrap: wrap
+	.second-header .search__filter
+		.filter-nav
+			&__header
+				flex-direction: column
+			&__menu
+				height: auto;
+				padding: 10px;
+			&__item
+				flex-direction: column
+				p
+					text-align: left;
+					max-width: none;
+					min-width: auto;
+			&__flex
+				flex-direction: column
+			&__radio
+				&:first-child
+					margin-bottom: 10px
+	.second-header .search__filter .filter-nav__content-part
+		width: auto
+	.second-header .search__filter .filter-nav__item-select-wrapper .input-long
+		min-width: auto
+	.second-header .search__filter .filter-nav__menu
+		justify-content: flex-start
 
-+r(600)
-
-+r(420)
+	.popup 
+		.in
+			width: 320px;
+			padding: 40px 9px 114px;
+		&__btn
+			width: 145px;
+			height: 40px;

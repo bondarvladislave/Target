@@ -48,6 +48,7 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 		display: flex
 		align-items: center
 		justify-content: space-between
+		min-height: 80px
 	&__flex
 		display: -webkit-flex
 		display: -moz-flex
@@ -55,7 +56,12 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 		display: -o-flex
 		display: flex
 		align-items: center
-	&__logo
+	&__logo-mob
+		display: none
+		padding: 10px 10px 0
+		img
+			display: block
+			margin: 0 auto
 	&__nav
 		margin-left: 75px
 		.nav
@@ -189,6 +195,9 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 				align-items: center
 				justify-content: center
 				transition: all .3s
+				margin-right: 5px
+				&:last-child
+					margin-right: 0
 				&:hover
 					color: #fff
 					background: $grad
@@ -301,6 +310,7 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 					display: none
 					position: absolute
 					top: 68px
+					z-index: 3
 					left: 0
 					width: 100%
 					background-color: #fff
@@ -502,7 +512,7 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 							cursor: pointer
 							justify-content: center
 						.label-long
-							width: 220px
+							min-width: 220px
 							max-width: 100%
 						input:checked+label
 							color: #fff
@@ -587,7 +597,7 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 	box-shadow: inset 2px -1px 10px -3px #4a74de;
 	background-color: #f9faff
 	&>.in
-		padding: 50px 0 95px
+		padding: 50px 10px 95px
 	&__caption
 		font-size: 28px
 		text-align: center
@@ -810,12 +820,13 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 			width: 100%
 			&-mainprice
 				color: #444e75
-				font-size: 23px
+				font-size: 22px
 				span
 					margin-right: 8px
 					font-weight: bold
 					text-decoration: underline
 			&-other
+				flex-wrap: wrap
 				margin-top: 40px
 			&-item
 				position: relative
@@ -866,7 +877,7 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 		&__number
 			margin-left: auto
 			color: #6e6e6e
-			font-style: 15px
+			font-size: 15px
 			font-weight: 500
 		&__bidding
 			align-items: center
@@ -876,13 +887,13 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 			img
 				margin-left: 12px
 		&__status
-			background-color: #77b97e
+			background-color: #b97777
 			border-radius: 50%
 			width: 13px
 			height: 13px
 			margin-right: 16px
 			&-active
-				background-color: #b97777
+				background-color: #77b97e
 		&__info
 			align-items: flex-start
 		&__text
@@ -906,7 +917,7 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 				max-width: 375px
 		&__check 
 			margin-left: 40px
-			width: 110px
+			min-width: 110px
 			height: 27px
 			font-size: 12px
 			text-transform: inherit
@@ -914,6 +925,8 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 		&__address
 			color: #6e6e6e
 			font-size: 18px
+			p
+				word-wrap: break-word
 		&__footer
 			padding: 20px 45px
 			justify-content: space-between
@@ -1233,3 +1246,9 @@ $grad: linear-gradient(to right, #535abe, #477de0)
 			background-size: 10px 9px
 		.popup__name
 			font-size: 15px
+
+.header__mob
+	.responsive-nav
+		display: none
+
+
